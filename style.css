@@ -1,0 +1,62 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Dark-Blue);
+}
+
+.card {
+  background-color: var(--Dark-Grayish-Blue);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 60px auto;
+  position: relative;
+  padding: 40px;
+  border-radius: 12px;
+}
+.dice {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resize {
+  margin: 0 auto;
+  position: absolute;
+  right: 41%;
+  bottom: -40px;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+}
+.resize:hover {
+  box-shadow: 0 0 20px 10px var(--Neon-Green);
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  margin-bottom: 30px;
+  color: var(--Neon-Green);
+}
+p {
+  padding-bottom: 20px;
+  color: var(--Light-Cyan);
+}
